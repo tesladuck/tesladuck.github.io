@@ -5,9 +5,11 @@
     <title>360&deg; Image</title>
     <meta name="description" content="360&deg; Image - A-Frame">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.js"></script>
+	<script src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script>
   </head>
   <body>
     <a-scene>
+	<a-entity camera look-controls mouse-cursor>
       <a-sky src="https://images.unsplash.com/photo-1557971370-e7298ee473fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80" rotation="0 -130 0"></a-sky>
       <a-text font="kelsonsans" value="Testing" width="6" position="-2.5 0.25 -1.5"
               rotation="0 15 0"></a-text>
