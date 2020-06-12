@@ -743,12 +743,13 @@ p {
     opacity: 1;
     transition: opacity 1s ease 1s;
 }
-.slide-inner--info h1 {
+.slide-inner--info h1,h2, p {
     margin: 10px 0;
     text-transform: uppercase;
     font-weight: 900;
     line-height: 1em;
     color: #fff;
+	text-align: center;
 }
 .slide--info__link {
     text-transform: uppercase;
@@ -1344,4 +1345,14 @@ footer {
     .ms-footer .socials {
         display: none;
     }
+}
+@media only screen and (min-width: 805px) {
+	.slide-inner-center {
+		display: flex;
+		align-items: center;
+		justify-content: center
+	}
+	.slide-inner-center .slide-inner--info {
+		bottom: auto;
+	}
 }
