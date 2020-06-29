@@ -9,12 +9,11 @@
   </head>
   <body height="100%">
   <!-- <a-scene background="color: #112" stats> -->
-    <a-scene stats>
-      <a-assets>
-        <a-asset-item id="cityModel" src="assets/gltf/scene1.gltf"></a-asset-item>
-      </a-assets>
-
-      <a-entity gltf-model="#cityModel" play-all-model-animations></a-entity>
-    </a-scene>
+    <a-scene>
+  <a-assets>
+    <a-asset-item id="tree" src="assets/gltf/scene.gltf"></a-asset-item>
+  </a-assets>
+  <a-entity gltf-model="#tree" position="-250 -70 0"></a-entity>
+</a-scene>
   </body>
 </html>
