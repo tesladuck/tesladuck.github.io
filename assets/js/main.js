@@ -11,7 +11,30 @@
           PageTransition(); 
       }
     };
-
+	
+	$(".musicOff").click(function(){
+        var image = document.getElementById('musicImg');
+        var x = document.getElementById("audioFile");
+        x.play();
+        if (image.src.match("assets/images/stop-audio.png")) {
+            image.src = "assets/images/play-audio.png";
+        }
+        else {
+            image.src = "assets/images/stop-audio.png";
+            x.pause();
+        }
+    });
+	
+	function changeImg() {
+      var image = document.getElementById('musicImg');
+      if (image.src.match("assets/images/play-audio.png")) {
+          image.src = "assets/images/stop-audio.png";
+      }
+      else {
+          image.src = "assets/images/play-audio.png";
+      }
+	}
+	
     // All Funtions
     PageTransition();
     Menu();
@@ -123,7 +146,6 @@ function Menu() {
             swiper.on('slideChange', function () {
                 $('.expanded-timeline__counter span:first-child').text(swiper.activeIndex + 1);
             });
-
             }
     }
 

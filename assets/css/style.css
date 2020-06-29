@@ -135,7 +135,9 @@ input[type="submit"]:focus {
 img {
     width: 100%;
 }
-
+#musicImg {
+	width: 20px;
+}
 /* 1.1 Typography */
 
 h1,

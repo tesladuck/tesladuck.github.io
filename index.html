@@ -87,7 +87,7 @@
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <!-- Slide -->
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slide-home">
               <div class="slide-inner slide-inner-center" data-swiper-parallax="45%">
                 <div class="overlay"></div>
                 <div class="slide-inner--image video-container">
@@ -95,14 +95,19 @@
 					<source src="assets/videos/WelcomeVid.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
+				<audio id="audioFile">
+					<source src="assets/audio/homePageAudio.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+
 				</div>
                 <div class="slide-inner--info">
                   <h2>OGANIKKU Presents</h2>
 				  <h1>Organic Fabric</h1>
 				  <p>sustainable, ecological and transparent</p>
                   <div class="ms-btn--slider" onclick="$('.swiper-button-next').click()">Start Walking</div>
+				<a class='musicOff' href="#!"><img src="assets/images/stop-audio.png" id="musicImg"></a>
                 </div>
-				<button class="button button5">50%</button>
               </div>
             </div>
             <!-- Slide -->
