@@ -42,8 +42,16 @@
     Sort();
     UniteGallery();
     ValidForm();
+	wasd_controllers();
 
 })(window);
+
+/*--------------------
+    WASD Controllers
+---------------------*/
+function wasd_controllers(){
+	
+}
 
 /*--------------------
     Page Transition
