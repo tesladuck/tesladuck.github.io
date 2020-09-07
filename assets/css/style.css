@@ -1215,6 +1215,9 @@ footer {
 .ms-footer .socials a {
     padding-left: 15px;
 }
+#gotoNextPage {
+    cursor: pointer;
+}
 /**
  * 11. Responsive Rules
  */

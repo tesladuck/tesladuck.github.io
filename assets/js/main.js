@@ -7,10 +7,15 @@
     }
 
     window.onpageshow = function(event) {
+	  $('.swiper-button-white').hide();
       if (event.persisted) {
           PageTransition(); 
       }
     };
+	
+	$("#gotoNextPage").click(function(){
+		$('.swiper-button-white').show();
+	});
 	
 	$(".musicOff").click(function(){
         var image = document.getElementById('musicImg');
